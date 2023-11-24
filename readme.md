@@ -14,7 +14,7 @@ Page-Synopsis is a powerful browser extension that brings you the essence of the
 
     1. Clone this repository to your local machine and switch to 'page-synopsis' branch using the following commands:
         ```
-        git clone https://kartik_lavkush@bitbucket.org/daffodilsoftware/ta115.git
+        git clone https://github.com/devendrayadav-dev/Real-Time-Webpage-Summarizer-Extension.git
         ```
         
         ```
