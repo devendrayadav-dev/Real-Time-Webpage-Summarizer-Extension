@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Page-Synopsis",
+  "version": "1.0",
+  "description": "Page-Synopsis is your secret to instant web page comprehension. Whether it's research, news, or entertainment, unlock key insights without reading the entire page!",
+  "permissions": ["activeTab", "scripting"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["popup.js"]
+    }],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+
+    }
+  }
+}

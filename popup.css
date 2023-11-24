@@ -1,0 +1,259 @@
+/* Apply universal styles to all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+}
+
+/* Styles for the toggle switch container */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  float: inline-end;
+  height: 20px;
+}
+
+/* Hide the actual checkbox input */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Styles for dark mode */
+.dark-mode {
+  background-color: #1E2029;
+  color: #fff;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Styles for buttons in dark mode */
+.dark-mode button {
+  border-color: #fff;
+  color: #fff;
+  transition: border-color 0.5s ease, color 0.5s ease;
+}
+
+/* Styles for the main wrapper container */
+.wrapper {
+  width: 400px;
+  margin-top: 10px;
+  margin-left: 5px;
+  border-color: blue;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* Styles for the header within the wrapper */
+.wrapper header {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: unset;
+  box-shadow: 0px 0px 11px -1px;
+  padding: 17px 30px;
+  border-bottom: 2px solid #ccc;
+  user-select: none;
+  margin-left: 100px;
+}
+
+/* Styles for the header on hover */
+.wrapper header:hover {
+  bottom: -2px;
+}
+
+/* Styles for the content section within the wrapper */
+.wrapper .content {
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Styles for the icon element */
+.content .icon {
+  height: 95px;
+  width: 95px;
+  border-radius: 50%;
+  border: 5px solid #ff0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styles for the icon's inner content */
+.content .icon i {
+  color: #ff0000;
+  font-size: 60px;
+}
+
+/* Styles for the title */
+.content .title {
+  margin: 15px 0;
+  font-size: 29px;
+  font-weight: 500;
+}
+
+/* Styles for paragraph text */
+.content p {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Styles for the output container */
+.output {
+  display: none;
+  margin-top: 20px;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+/* Styles for hidden elements */
+.hidden {
+  display: none;
+}
+
+/* Styles for the output textarea */
+.output textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+/* Styles for the button container */
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Styles for the header title container */
+.header-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+
+/* Styles for buttons */
+.buttons button {
+  background-color: transparent;
+  border: 1px solid #FF6B6B; 
+  border-radius: 10px; 
+  color: #FF6B6B; 
+  padding: 12px 24px; 
+  font-size: 16px; 
+  font-weight: bold; 
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+/* Styles for buttons on hover */
+.buttons button:hover {
+  background-color: #FF6B6B; 
+  color: #fff;
+  box-shadow: 0px 4px 8px rgba(255, 107, 107, 0.5); 
+  transform: translateY(-2px); 
+}
+
+/* Styles for the output box */
+#outputBox {
+  display: block;
+  width: 100%;
+}
+
+/* Styles for the copy button */
+#copyButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Styles for the copy button image */
+#copyButton img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Styles for the loading container */
+.loading-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 20px;
+  margin-top: 18px;
+}
+
+/* Styles for the loading image */
+#loadingImage {
+  width: 25px;
+  height: 25px;
+}
+
+/* Styles for the message container */
+#message {
+  margin-top: 10px;
+  font-size: 14px;
+  color: green;
+  text-align: center;
+}
+
+/* Styles for the output box scrollbar */
+#outputBox {
+  overflow: scroll;
+}
+
+/* Styles for the output box scrollbar track */
+#outputBox::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+/* Styles for the output box scrollbar thumb */
+#outputBox::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* Styles for the toggle button */
+.toggle-button {
+  width: 40px;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 20px;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Styles for the toggle button in dark mode */
+.dark-mode .toggle-button {
+  background-color: #333;
+}
+
+/* Styles for the toggle button icon */
+.toggle-button::before {
+  content: "☀️";
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+/* Styles for the toggle button icon in dark mode */
+.dark-mode .toggle-button::before {
+  content: "🌙";
+  left: auto;
+  right: 4px;
+}

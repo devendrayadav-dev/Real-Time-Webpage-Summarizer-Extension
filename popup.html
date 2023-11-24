@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page-Synopsis</title>
+
+  <!-- Linking your custom CSS stylesheet -->
+  <link rel="stylesheet" href="./popup.css">
+
+  <!-- Linking BoxIcon for Icon -->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <!-- Wrapping container with draggable attribute -->
+  <div class="wrapper">
+    <!-- Header and title section -->
+    <div class="header-title">
+      <header>Page-Synopsis</header>
+
+      <!-- Dark mode toggle button container -->
+      <div class="toggle-container">
+        <button id="darkLightToggleSwitch" class="toggle-button"></button>
+      </div>
+    </div>
+
+    <!-- Content section -->
+    <div class="content">
+      <!-- Button container -->
+      <div class="buttons">
+        <button id="getSummaryButton">Summary</button>
+        <button id="getMajorPointsButton">Major Points</button>
+      </div>
+
+      <!-- Output section -->
+      <div class="output">
+        <!-- Loading image container -->
+        <div class="loading-container">
+          <img src="./icons/interwind.gif" id="loadingImage" alt="Loading Image" class="hidden">
+        </div>
+
+        <!-- Output textarea -->
+        <textarea id="outputBox" rows="10" cols="50" readonly></textarea>
+
+        <!-- Copy button -->
+        <button id="copyButton">
+          <img src="/icons/icon-copy_image.jpg" alt="Button Image">
+        </button>
+
+        <!-- Message container -->
+        <div id="message">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Including Axios library for HTTP requests -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- Including your custom JavaScript file -->
+  <script src="popup.js"></script>
+</body>
+
+</html>
